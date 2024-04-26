@@ -1,0 +1,80 @@
+﻿@model PFEA.Models.le_bien
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>le_bien</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.type_bien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.type_bien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.superficie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.superficie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.localisation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.localisation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prix)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_annonces)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_annonces)
+        </dd>
+        <div>
+
+            <script type="text/javascript" src="~/JavaScript.js"></script>
+            <button onclick="imprimer()" imprimer>imprimer</button>
+            <a href="javascript:window.print()">Imprimer la page</a>
+        </div>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_bien }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

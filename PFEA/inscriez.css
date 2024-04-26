@@ -1,0 +1,25 @@
+img{opacity: 0.5;background-image: url(./plan.avif);  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+}
+body{background-color:white;}
+form{margin-left: 60%; position:sticky;}
+input{margin: 20px;}
+fieldset{background-color:gray; width: 90%; height: 520px;}
+.inscri{background-color: rgb(228, 196, 196); width: 150px;
+    margin-top: 4%;
+    margin-left: 35%;
+    font-size: 98%;
+    height: 36px;
+    border: none;
+    outline: none;
+    background:rgb(226, 56, 56);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;}
+fieldset{margin-top: -545px; margin-right: 100px;}
+label{text-decoration:wavy; color: rgb(10, 8, 8); font-size: 22px;}
+.inscri:hover{background-color: rgb(243, 201, 207);}

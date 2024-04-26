@@ -1,0 +1,2 @@
+﻿function imprimer() {
+   window.print();}

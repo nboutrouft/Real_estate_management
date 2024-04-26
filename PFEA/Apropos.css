@@ -1,0 +1,13 @@
+.im{background-repeat:no-repeat;margin-left: 50%;}
+.d1{background-color:white}
+#d2{background-color: rgba(235, 227, 235, 0.952);}
+h1{text-align:center; color: rgb(11, 31, 121);}
+h2{text-transform: uppercase; background-color:rgb(243, 242, 241); color: navy;}
+span{color:rgb(184, 184, 233); text-transform:lowercase;}
+p{font-size: larger; text-transform: lowercase;}
+.c1{color: black; text-decoration: underline;}
+.i1{width: 20%;height: 200px; background-color:bisque; }
+.i2{width: 20%;height: 200px; background-color: rgb(189, 140, 140);}
+.i4{width: 20%;height: 200px; background-color: rgb(189, 140, 140);}
+.i5{width: 20%;height: 200px; background-color: rgb(189, 140, 140);}
+div{display: inline-block; margin-left: 20px; background-color:whitesmoke;}

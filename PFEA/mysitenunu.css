@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=PT+Sans+Caption&family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Licorice&family=PT+Sans+Caption&family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Licorice&family=PT+Sans+Caption&family=Playfair+Display+SC&display=swap');
+/*body{background-image:url(./house.jpg);}*/
+/*#nou{background-image:url(./house.jpg);
+    #nou{background-image: url(./dar2.jpg);
+    }*/
+    body{background-color: rgb(228, 236, 232);}
+    #logo{margin: 4.5%;}
+#nou {
+    background-image: url('Content/pexels-sharath-g-2251247.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45em;
+    width: 85em;
+    animation-name: changeimg;
+    animation-duration: 10s;
+}
+      @keyframes changeimg{
+        25% {
+            background-image: url('Content/pexels-sharath-g-2251247.jpg');
+        }
+        50% {
+            background-image: url('Content/jeremy-bezanger-v4IJJu1Qa0U-unsplash.jpg');
+        }
+        100% {
+            background-image: url('Content/pexels-jean-van-der-meulen-1457841.jpg');
+        }
+      }
+    .you{width: 15em; height: 30%;}
+    .mara{width: 15 em; height: 30%;}
+
+*{
+  padding:0;
+  margin: 0;
+
+}
+body{
+    width: 100vw;
+    height: auto;
+
+}
+
+.header{
+  
+    width: 100%;
+    height: 100px;
+    margin: -2%;
+    margin-left: 0%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    font-family: 'Playfair Display SC', serif;
+    background-color:black;
+    position: fixed;
+}
+
+
+.nlinks{
+    
+    text-decoration: none;
+    padding: 24px;
+    color:white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.nlinks:hover{
+
+   background-color:rgb(78, 94, 78);
+}
+.main{
+    width: 100vw;
+    height: auto;
+    margin: 1% auto;
+    margin-bottom: 53%;
+
+}
+.image{
+    
+    width: 100vw;
+    
+  
+}
+.d1{
+
+    width: 1500px;
+    height: 1030px;
+    background : url(luxury-real-estate.jpg);
+  
+    
+}
+  
+
+#picks{
+    text-align: center;
+    margin-bottom:4%;
+   margin-top: 4%;
+    margin-right: 5%;
+    font-family: 'Cinzel Decorative', cursive;
+    
+}
+
+.box1{
+    margin-left: 0.5%;
+    width: 25px;
+    margin-bottom: 6%;
+    
+    
+}
+.box img{
+
+    margin-bottom: 4%;
+}
+.box h3{
+    margin-bottom: 4%;
+}
+.box P{
+    margin-bottom: 4%;
+    font-family:'PT Sans Caption', sans-serif;
+}
+.click{
+    margin-top: 4%;
+    width: 120px;
+    height: 36px;
+    background: rgb(13, 182, 111);
+    color: rgb(12, 4, 41);
+    padding:4px;
+    border: none;
+}
+.click:hover{
+    color:rgb(223, 213, 217)
+}
+/*.topannonce{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 1.5%;
+}*/
+
+input {
+    background: white;
+    color: rgb(7 2 18);
+    transition: all 200ms ease;
+    border-left: 0 solid transparent;
+    border: 0;
+    height: 1rem;
+    padding: 0 calc(5.8rem * 0.5);
+    border-radius: calc(5.8rem * 0.3);
+    box-shadow: 0 0 2rem rgb(0, 0, 0, 20%);
+  }
+
+
+
+ 
+.dv{
+     
+   
+     margin: 4%;
+    margin-top: 5%;
+     background: rgba(210, 218, 210, 0.37);
+      padding: 1%;
+      width: 30%;
+      justify-content: space-between 4%;
+      font-family:'PT Sans Caption', sans-serif;
+      
+     
+ }
+ 
+.p1{
+  display: inline;
+ 
+  
+  
+}
+.type{
+    margin-left: 7%;
+}
+      
+      
+    
+
+ 
+.b{
+    justify-content: space-between;
+    padding: 2%;
+}
+
+
+   
+
+
+   /* width: 20%;
+    height: 36px;
+    background: rgb(23, 161, 106);
+    color: rgb(253, 241, 241);
+    padding:6px;
+    border: none;
+    margin-left: 30%;
+    margin-top: 10%;*/
+  
+
+
+
+.btn {
+    width: 30%;
+    margin-top: 4%;
+    margin-left: 60%;
+    font-size: 98%;
+    height: 36px;
+    border: none;
+    outline: none;
+    background:black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .btn::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(
+      124deg,
+      #ad3624,
+      #dfc0c0,
+      #745902,
+      #cdcf5a,
+      #0c8520,
+      #2b3c3d,
+      #454358,
+      #e28731,
+      #a068a5
+    );
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: move 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .btn:hover::before {
+    opacity: 1;
+  }
+  
+  .btn::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #52736b;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  } 
+.inpt{
+
+    padding: 1%;
+    justify-content: space-between;
+    font-style: normal;
+   border-color: ghostwhite;
+    background-color: rgba(255, 255, 255, 0.842);
+}
+
+#maison{
+    margin-left: 3%;
+    cursor: pointer;
+    border: 1px solid var(--select-border);
+}
+#pic{width: 20px; height: 20px;}
+#pic2{width: 40px; height: 40px;}
+#prp{width: 30px; height: 20px;}
+#annc{width: 30px; height: 20px;}
+#inscri{width: 30px; height: 20px;}
+#cnx{width: 30px; height: 20px;}
+#down{background-color:rgb(63, 83, 63);width: 100%;height: 30em;}
+.twiter{width: 30px;height: 30 px;padding: 5px;}
+.fb{width: 50px;height: 30px;}
+.insta{width: 50px;height: 30px;}
+
+
+.im1{padding-top:0%;
+  margin:7%;
+}
+div{display: inline-block; margin: 20px;}
+/*video{width: 50%; height: 30%;}*/
+
+#h2{background-color: white; width: 350px; height: 400px; display:inline-block; border: 20px solid #DDDDDD; position: relative;}
+#h3{background-color: white; width: 350px; height: 400px; display:inline-block; border: 20px solid #DDDDDD; position: relative;}
+#h4{background-color: white; width: 350px; height: 400px; display:inline-block;  border: 20px solid #DDDDDD; position: relative;}
+  .tag {
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    background-color: #e6ba2a;
+    padding: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+ }
+
+
+.bttn{background-color: rgb(32, 173, 32); border-radius: 10px; width: 30%; height: 10%;color:white; margin-bottom: 5%;}
+
+.iii{background-repeat: no-repeat; background-size:cover;height: 35em;width: 80em;}
+
+#example {
+  position: absolute;
+  top: 10px;
+  left: 10px; 
+   
+  padding: 5px;
+  background-color: white;
+  border: 2px solid red;
+}
+
+
+

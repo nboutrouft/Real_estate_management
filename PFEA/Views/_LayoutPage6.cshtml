@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Account</title>
+        <link rel="icon" type="image/png" href="./user.png" />
+        <link href="~/Myaccount.css" rel="stylesheet" />
+
+    </head>
+<body>
+
+   
+
+        <ul>
+            <li>@Html.ActionLink(" Publier Annonce", "Index", "le_bien2/Index")</li>
+            <li>@Html.ActionLink("Accuuiel", "sitenunu", "Home2")</li>
+            <li><a href="#" data-text="Work">Déconnecté</a></li>
+        </ul>
+
+    </body>
+    <div>
+        @RenderBody()
+    </div>
+</html>

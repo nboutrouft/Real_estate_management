@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Agence_immobilierModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="le_bien">
+          <Key>
+            <PropertyRef Name="id_bien" />
+          </Key>
+          <Property Name="id_bien" Type="int" Nullable="false" />
+          <Property Name="type_bien" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="superficie" Type="nchar" MaxLength="60" Nullable="false" />
+          <Property Name="description" Type="varchar" MaxLength="700" Nullable="false" />
+          <Property Name="localisation" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="prix" Type="money" Nullable="false" />
+          <Property Name="image" Type="varchar(max)" />
+          <Property Name="date_annonces" Type="date" />
+        </EntityType>
+        <EntityContainer Name="Agence_immobilierModel1StoreContainer">
+          <EntitySet Name="le_bien" EntityType="Self.le_bien" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Agence_immobilierModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="le_bien">
+          <Key>
+            <PropertyRef Name="id_bien" />
+          </Key>
+          <Property Name="id_bien" Type="Int32" Nullable="false" />
+          <Property Name="type_bien" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="superficie" Type="String" MaxLength="60" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="700" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="localisation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="prix" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="date_annonces" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityContainer Name="Agence_immobilierEntities11" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="le_bien" EntityType="Self.le_bien" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Agence_immobilierModel1StoreContainer" CdmEntityContainer="Agence_immobilierEntities11">
+          <EntitySetMapping Name="le_bien">
+            <EntityTypeMapping TypeName="Agence_immobilierModel1.le_bien">
+              <MappingFragment StoreEntitySet="le_bien">
+                <ScalarProperty Name="id_bien" ColumnName="id_bien" />
+                <ScalarProperty Name="type_bien" ColumnName="type_bien" />
+                <ScalarProperty Name="superficie" ColumnName="superficie" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="localisation" ColumnName="localisation" />
+                <ScalarProperty Name="prix" ColumnName="prix" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="date_annonces" ColumnName="date_annonces" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Aucun" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,74 @@
+﻿@model IEnumerable<PFEA.Models.le_bien>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.type_bien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.superficie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.localisation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prix)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.date_annonces)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.type_bien)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.superficie)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.description)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.localisation)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.prix)
+    </td>
+    <td>
+        <img src="@Url.Content(item.image);" width="200" height="200" class="img-rounded" />
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.date_annonces)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.id_bien }) |
+        @Html.ActionLink("Details", "Details", new { id = item.id_bien }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.id_bien })
+    </td>
+   
+
+
+</tr>
+
+    }
+
+</table>

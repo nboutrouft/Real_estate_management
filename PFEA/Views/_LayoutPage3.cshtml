@@ -1,0 +1,122 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mysitenunu.css">
+    <link rel="stylesheet" href="./mysite.css">
+    <link rel="stylesheet" href="../htmcssdounia/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="~/mysitenunu.css" rel="stylesheet" />
+    <title>Agence Immobiliere</title>
+    <link rel="icon" type="image/png" href="~/Content/ville.png" />
+
+</head>
+<body>
+    <header class="header">
+        <h1 id="logo" style="color: white;font-size: xx-large;"> Val Foncier <img src="~/Content/house.png" id="pic2"></h1>
+        <nav class="toplinks">
+            @* <a href="./Apropos.html" class="nlinks"><!--<img src="./information.png" id="prp">--> A propos</a>
+            <a href="./Annonce.html" class="nlinks"> Des annonces<img src="./commercialisation.png" id="annc"></a>
+        <a>@Html.ActionLink("Annonces", "Index", "le_bien/Index")</a>*@
+            @*<a href="./inscriez.html" class="nlinks"> inscrives-vous<img src="./checklist.png" id="inscri"></a>
+        <a href="./connexion.html" class="nlinks">connexion<img src="./connexion.png" id="cnx"></a>*@
+            @Html.ActionLink("Conectez-nous", "Annonce", "Home2")
+            @Html.ActionLink("A propos", "Apropos", "Home2")
+            @Html.ActionLink("connexion", "Index", "trylog")
+            <a>@Html.ActionLink("inscription", "Inscription", "user/Inscription")</a>
+            })
+
+
+        </nav>
+
+        <!--<div class="topicons">
+        <i class="material-icons" style="font-size:30px">person_outline</i>
+         </div>!-->
+    </header>
+
+    <header>
+        <main class="main">
+
+            <section class="top">
+
+                <div class="d1" id="nou">
+                    <br><br>
+                    <p style="font-size: 70px; color: aliceblue;margin-left: 40%;padding: 3%;">
+                        Find the perfect place to Live  with your family
+                    </p>
+                    <!-- <p style="font-size: 40px; color: aliceblue;margin-left: 40%;"></p>-->
+                    @*<div class="dv">
+            <input class="p1" type="radio">
+
+            <p class="p1">rent</p>
+
+            <input class="p1" type="radio">
+
+            <p class="p1">sell</p>
+
+            <label class="type" for="Type de maison"> type de maison :</label>
+            <select id="maison" name="maison">
+                <option value="villa">villa</option>
+                <option value="msn">maison</option>
+                <option value="appart">appartement</option>
+                <option value="studio">studio</option>
+
+            </select>
+
+            <p class="b"> superficie:</p>
+            <input class="inpt" type="number" placeholder="enter le superficie">
+            <p class="b"> localisation:</p>
+            <input class="inpt" type="text" placeholder="localisation">
+            <p class="b">Buget minimal:</p>
+            <input class="inpt" type="number" placeholder="prix min">
+            <p class="b">Buget maximal:</p>
+            <input class="inpt" type="number" placeholder="prix max"> <br>
+
+
+            <button class="btn">search <img src="./chercher.png" id="pic" /></button>*@
+
+                </div>
+                <h1 style="text-decoration: underline; text-align: center;"> Our Properties :</h1>
+                <div id="h2">
+                    <div class="tag">Rent</div>
+                    <img class="im1" src="~/Content/andrea-davis-0SSPeyokubs-unsplash.jpg" style="width: 300px;height: 200px;">
+                    <h2>30000DH-50000DH</h2>
+                    <p style="font-size: 25px;">The main problem is the criteria by which the apartment is selected.</p>
+                    <button type="button" class="bttn">Details</button>
+                </div>
+                <div id="h3">
+                    <div class="tag">Sell</div>
+                    <img class="im1" src="~/Content/andrea-davis-7450hH--84M-unsplash.jpg" style="width: 300px;height: 200px;">
+                    <h2>56000DH-60000DH</h2>
+                    <p style="font-size: 22px;">A lot of questions are connected with it. You need to consider the area of the apartment, its condition and location</p>
+                    <button type="button" class="bttn">Details</button>
+                </div>
+                <div id="h4">
+                    <div class="tag">Rent</div>
+                    <img class="im1" src="~/Content/eduardo-freire-1UH-uVzTiDU-unsplash (1).jpg" style="width: 300px;height: 200px;">
+                    <h2>70000-87000DH</h2>
+                    <p style="font-size: 25px;"> Renting apartments through a realtor is a rather complicated segment of the real estate market.</p>
+                    <button type="button" class="bttn">Details</button>
+                </div>
+                <h1 style="font-size: 40px; color:rgb(56, 34, 17);text-align: center; margin-bottom: 70px;">NOS SERVICES </h1>
+                <img src="~/Content/nosservice.PNG" class="iii" />
+
+                </div>
+            </section>
+        </main>
+     </header>
+   
+<div>
+    @RenderBody()
+</div>
+    </body>
+</html>

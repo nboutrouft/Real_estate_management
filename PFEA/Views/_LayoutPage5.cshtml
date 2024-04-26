@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Pub_annonce.css" rel="stylesheet" />
+</head>
+<body>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contact us </title>
+        <style>
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                margin: auto;
+            }
+
+                form input, form textarea, form button {
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    outline: none;
+                    border: none;
+                    background-color: beige;
+                }
+
+                form button {
+                    background-color: rgb(54, 53, 53);
+                    cursor: pointer;
+                    color: aliceblue;
+                }
+
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+        <h1>Contactez nous</h1>
+        <form action="#" class="contact_form">
+            <input class="name" type="text" placeholder="NAME...">
+            <input class="email" type="email" placeholder=" Email....">
+            <textarea class="msg" cols="5" rows="5" placeholder="Message...."> </textarea>
+            <button type="submit"> Send</button>
+        </form>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <script>
+            const form = document.querySelector('contact_form');
+            function sendMsg(e) {
+                e.preventDefault();
+
+                const name = document.querySelector('name'),
+                    email = document.querySelector('email'),
+                    msg = document.querySelector('msg');
+
+                Email.send({
+                    SecureToken: "7abde88e-a8ed-4ef4-b1ff-e64f0402a2af",
+                    To: 'boutrouft6@gmail.com',
+                    From: email.value,
+                    Subject: "Contact form",
+                    Body: msg.value
+                }).then(
+                    message => alert(message)
+                );
+            }
+            form.addEventListenner('submit', sendMsg);
+
+        </script>
+
+<div>
+    @RenderBody()
+</div>
+</body>
+</html>

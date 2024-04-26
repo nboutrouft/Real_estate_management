@@ -1,0 +1,74 @@
+﻿@model PFEA.Models.le_bien
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>View</h2>
+
+<div>
+    <h4>le_bien</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.id_bien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_bien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.type_bien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.type_bien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.superficie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.superficie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.localisation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.localisation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prix)
+        </dd>
+
+        <dt>
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(Model.image)" width="250" height="250" />
+
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

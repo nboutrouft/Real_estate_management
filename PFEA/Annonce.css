@@ -1,0 +1,153 @@
+body{background-color:beige;}
+.d1{background-color:white; height: 100px;}
+h1{color:black; margin-left: 3%; }
+a{background-color: bisque; margin: 15%}
+.btn1{margin-left:70%; height: 35px; width: 10%; color: #fff; background-color:rgb(8, 8, 8);}
+.btn2{margin-left:3%; height: 35px; width: 10%; color: aliceblue; background-color: rgb(20, 19, 19);}
+img{width: 100%; height: 400px; padding: 0.5%;}
+.d2{background-color:rgb(7, 41, 80); text-align: center;width: 280px; margin: 3%; height: 70px;}
+h2{color: beige;}
+
+input{width: 15%; height: 20%; margin: 1.5%;}
+label{font-size: 20px;}
+#comp{width: 15%; height: 20%;}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+.wrapper{
+  display: inline-flex;
+  background: #fff;
+  height: 90px;
+  width: 390px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px 15px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.wrapper .option{
+  background: #fff;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  background:black;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: black;
+  background:rgb(26, 94, 26);
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 20px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+#pic{width: 20px; height: 20px;}
+.button{
+    width: 30%;
+    margin-top: 1%;
+    margin-left: 30%;
+    font-size: 98%;
+    height: 36px;
+    border: none;
+    outline: none;
+    background:black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .button::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(
+      124deg,
+      #ad3624,
+      #dfc0c0,
+      #745902,
+      #cdcf5a,
+      #0c8520,
+      #2b3c3d,
+      #454358,
+      #e28731,
+      #a068a5
+    );
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: move 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .button:hover::before {
+    opacity: 1;
+  }
+  
+  .button::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(21, 92, 21);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  fieldset{background-color:rgb(186, 219, 207);}
+
